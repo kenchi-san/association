@@ -2,78 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27db038e-7912-44ea-b573-041020c3b9b4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/modern-business.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/3Z6A0264.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/3Z6A0265.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/3Z6A0273.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/3Z6A0278.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/3Z6A0281.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/3Z6A0291.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/3Z6A0300.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/3Z6A0305.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/3Z6A0349.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/3Z6A0353.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/3Z6A0357.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/3Z6A0358.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/3Z6A0367.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/3Z6A0368.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/3Z6A9249.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/3Z6A9254.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/3Z6A9274.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/DSC01370.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/DSC01376.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/DSC01763.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/DSC01764.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/DSC01766.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/DSC01768.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/DSC01773.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/DSC01774.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/DSC01790.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/DSC01791.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/DSC02020.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/DSC02026.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/DSC02032.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/DSC02033.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/DSC02037.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/DSC02050.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/DSC02062.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/DSC02069.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/DSC02086.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/DSC02112.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/DSC02125.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/DSC02128.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/DSC02131.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/DSC02337.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/DSC02343.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/DSC02378.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/DSC02383.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/DSC02400.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/DSC02409.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/DSC02414.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/DSC02415.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/DSC02419.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/DSC02422.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/DSC02424.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/DSC02427.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/DSC02431.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/DSC02467.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/DSC02482.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/DSC02511.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/la serre(1).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/la serre.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/contact_me.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jqBootstrapValidation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/BackController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/homeController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/pages/about.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/pages/blog-post.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/pages/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -89,14 +18,14 @@
     <session id="-1140105934">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.6" value="2" />
-          <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.7" value="2" />
           <entry key="project.open.time.8" value="2" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -117,7 +46,7 @@
         <counts>
           <entry key="PHP" value="568" />
           <entry key="PLAIN_TEXT" value="20" />
-          <entry key="Twig" value="934" />
+          <entry key="Twig" value="1082" />
           <entry key="YAML" value="47" />
         </counts>
       </usages-collector>
@@ -128,16 +57,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="111" selection-start-line="111" selection-end-line="111" />
-              <folding>
-                <element signature="e#793#801#0#Twig" expanded="true" />
-                <element signature="e#1322#1326#0#Twig" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#6949#6953#0#Twig" expanded="true" />
-              </folding>
+            <state relative-caret-position="323">
+              <caret line="51" column="26" lean-forward="true" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -145,29 +66,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/homeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
+            <state relative-caret-position="340">
               <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
               <folding>
                 <element signature="e#117#176#0#PHP" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/BackController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/pages/index.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="27" selection-start-column="27" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -305,9 +208,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="952" />
-    <option name="width" value="977" />
-    <option name="height" value="1038" />
+    <option name="x" value="950" />
+    <option name="width" value="979" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -315,6 +218,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -326,12 +230,6 @@
               <item name="swahilisa" type="b2602c69:ProjectViewProjectNode" />
               <item name="swahilisa" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="swahilisa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="swahilisa" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="swahilisa" type="b2602c69:ProjectViewProjectNode" />
@@ -348,7 +246,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -396,26 +293,28 @@
       <workItem from="1545399124891" duration="1210000" />
       <workItem from="1545415242629" duration="256000" />
       <workItem from="1545502199181" duration="1351000" />
-      <workItem from="1545591116472" duration="5786000" />
+      <workItem from="1545591116472" duration="7344000" />
+      <workItem from="1545916762118" duration="3765000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21671000" />
+    <option name="totallyTimeSpent" value="26994000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.5063291" visible="true" weight="0.15838926" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.5063291" visible="true" weight="0.16040269" />
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.32765958" />
-      <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.4966443" weight="0.32056737" />
+      <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.4966443" visible="true" weight="0.32056737" />
       <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" weight="0.32765958" />
       <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.5033557" side_tool="true" weight="0.32056737" />
       <window_info anchor="bottom" id="Version Control" order="4" show_stripe_button="false" weight="0.32907802" />
       <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="6" />
-      <window_info active="true" anchor="bottom" id="Find" order="7" sideWeight="0.49932885" visible="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Find" order="7" sideWeight="0.49932885" weight="0.32907802" />
       <window_info anchor="bottom" id="Run" order="8" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
@@ -461,13 +360,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/pages/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="27" selection-start-column="27" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/pages/blog-post.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -475,9 +367,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="51" column="26" lean-forward="true" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/homeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
+        <state relative-caret-position="340">
           <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
           <folding>
             <element signature="e#117#176#0#PHP" expanded="true" />
@@ -492,18 +391,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
+    <entry file="file://$PROJECT_DIR$/templates/pages/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="111" selection-start-line="111" selection-end-line="111" />
-          <folding>
-            <element signature="e#793#801#0#Twig" expanded="true" />
-            <element signature="e#1322#1326#0#Twig" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#6949#6953#0#Twig" expanded="true" />
-          </folding>
+        <state>
+          <caret column="27" selection-start-column="27" selection-end-column="27" />
         </state>
       </provider>
     </entry>

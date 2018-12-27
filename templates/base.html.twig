@@ -38,6 +38,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Nos actions</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Nos événements</a>
+                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Nos galeries
@@ -55,9 +58,10 @@
         </div>
     </div>
 </nav>
-
+<!--end nav-->
 <header>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <!--start carroussel-->
+    <div id="carouselExampleIndicators" class="carousel slide pb-4" data-ride="carousel">
         <ol class="carousel-indicators">
            <!-- <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -95,48 +99,30 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
+    <!--end carroussel-->
 </header>
 {% block body %}
 <!-- Page Content -->
 <div class="container">
 
-    <h1 class="my-4">Nos Evenements</h1>
-
-    <!-- Marketing Icons Section -->
+    <!-- Features Section -->
     <div class="row">
-        <div class="col-lg-4 mb-4">
-            <div class="card h-100">
-                <h4 class="card-header">1er événement</h4>
-                <div class="card-body">
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-
-                </div>
-                <div class="card-footer">
-                    <a href="{{ path('post') }}" class="btn btn-primary">Lire la suite</a>
-                </div>
-            </div>
+        <div class="col-lg-6">
+            <h2>Notre Ecole</h2>
+            <p>The Modern Business template by Start Bootstrap includes:</p>
+            <ul>
+                <li>
+                    <strong>Bootstrap v4</strong>
+                </li>
+                <li>jQuery</li>
+                <li>Font Awesome</li>
+                <li>Working contact form with validation</li>
+                <li>Unstyled page elements for easy customization</li>
+            </ul>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
         </div>
-        <div class="col-lg-4 mb-4">
-            <div class="card h-100">
-                <h4 class="card-header">2èmes événements</h4>
-                <div class="card-body">
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ipsam eos, nam perspiciatis natus commodi similique totam consectetur praesentium molestiae atque exercitationem ut consequuntur, sed eveniet, magni nostrum sint fuga.</p>
-                </div>
-                <div class="card-footer">
-                    <a href="#" class="btn btn-primary">Lire la suite</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 mb-4">
-            <div class="card h-100">
-                <h4 class="card-header">3èmes événements</h4>
-                <div class="card-body">
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-                </div>
-                <div class="card-footer">
-                    <a href="#" class="btn btn-primary">Lire la suite</a>
-                </div>
-            </div>
+        <div class="col-lg-6">
+            <img class="img-fluid rounded" src="{{ asset('img/3Z6A0349.JPG') }}" alt="">
         </div>
     </div>
     <!-- /.row -->
@@ -214,26 +200,7 @@
     </div>
     <!-- /.row -->
 
-    <!-- Features Section -->
-    <div class="row">
-        <div class="col-lg-6">
-            <h2>Modern Business Features</h2>
-            <p>The Modern Business template by Start Bootstrap includes:</p>
-            <ul>
-                <li>
-                    <strong>Bootstrap v4</strong>
-                </li>
-                <li>jQuery</li>
-                <li>Font Awesome</li>
-                <li>Working contact form with validation</li>
-                <li>Unstyled page elements for easy customization</li>
-            </ul>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
-        </div>
-        <div class="col-lg-6">
-            <img class="img-fluid rounded" src="http://placehold.it/700x450" alt="">
-        </div>
-    </div>
+
     <!-- /.row -->
 
     <hr>
