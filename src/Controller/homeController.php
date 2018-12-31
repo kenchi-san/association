@@ -19,24 +19,36 @@ class homeController extends AbstractController
      * @Route("/",name="homepage")
      * @return Response
      */
-    public function index():Response{
-    return $this->render('pages/index.html.twig');
-}
+    public function index(): Response
+    {
+        return $this->render('pages/index.html.twig');
+    }
 
     /**
      * @Route("about", name="team")
      * @return Response
      */
-public function about():Response{
+    public function about(): Response
+    {
         return $this->render('pages/about.html.twig');
-}
+    }
 
     /**
      * @Route("post", name="post")
      * @return Response
      */
-public function post():Response{
-    return $this->render('pages/blog-post.html.twig');
-}
+    public function post(): Response
+    {
+        return $this->render('pages/blog-post.html.twig');
+    }
+
+    /**
+     * @Route("event", name="event")
+     * @return Response
+     */
+    public function Event(): Response
+    {
+        return $this->render('pages/Event.html.twig');
+    }
 
 }
