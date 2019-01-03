@@ -12,6 +12,7 @@ namespace App\Controller;
 use App\BackManager\ActionManager;
 use App\Entity\Action;
 use App\Form\ActionType;
+use App\Repository\ActionRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -20,6 +21,25 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class BackController extends AbstractController
 {
+    private $repository;
+
+    /**
+     * BackController constructor.
+     * @param ActionRepository $repository
+     */
+    public function __construct(ActionRepository $repository)
+{
+    $this->repository = $repository;
+}
+
+    /**
+     * @Route("Admin/show",name="admin-show")
+     * @return Response
+     */
+public function index(){
+        $actions =$this->repository->findAll();
+        return $this->render('backend/admin_show.html.twig',compact('actions'));
+}
 
     /**
      * @param Request $request
@@ -35,25 +55,16 @@ class BackController extends AbstractController
 
         if ($form->isSubmitted() && $form->isValid()) {
 
-            $path = $this->getParameter('kernel.project_dir').'/public/images';
-
-            $file = $action->getImage()->getFile();
-
-            $name = md5(uniqid()).'.'.$file->guessExtension();
-
-            $file->move($path, $name);
-
-            $action->getImage()->setName($name);
-
-
-
             $manager->persist($action);
             $manager->flush();
 
-            return $this->redirectToRoute('homepage');
+            return $this->redirectToRoute('admin-show');
         }
 
-        return $this->render('backend/Form-Add-Action.html.twig', ['form' => $form->createView()]);
+        return $this->render('backend/action.edit.html.twig', [
+            'actions'=>$action,
+            'form'=>$form->createView()
+        ]);
 
 
     }
@@ -72,18 +83,6 @@ class BackController extends AbstractController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-
-            dump($action->getImage()->getFile());
-            $path = $this->getParameter('kernel.project_dir').'/public/images';
-
-            $file = $action->getImage()->getFile();
-
-           $name = md5(uniqid()).'.'.$file->guessExtension();
-
-           $file->move($path, $name);
-
-            $action->getImage()->setName($name);
-
 
 
             $manager->persist($action);

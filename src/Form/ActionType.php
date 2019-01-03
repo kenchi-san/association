@@ -6,6 +6,7 @@ use App\Entity\Action;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Vich\UploaderBundle\Form\Type\VichImageType;
 
 class ActionType extends AbstractType
 {
@@ -14,7 +15,7 @@ class ActionType extends AbstractType
         $builder
             ->add('title')
             ->add('content')
-            ->add('image', ImageType::class, ['label'=>false])
+            ->add('imageFile', VichImageType::class, ['label'=>false])
         ;
     }
 

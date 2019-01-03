@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<body>
+<div class="container">
+    <div class="col-6">
+        <h1> Gérer les Actions </h1>
+        <table class="table">
+            <theader>
+                <tr>
+                    <th>
+                        Titre
+                    </th>
+                    <th>
+                        contenu
+                    </th>
+                    <th>nom de l'image</th>
+                </tr>
+            </theader>
+            <tbody>
+            {% for action in actions %}
+
+            <tr>
+                <td>
+{{ action.title }}
+                </td>
+                <td>
+{{ action.content }}
+                </td>
+                <td>
+                    {{ action.imageName }}
+                </td>
+                <td>
+                    <a href="{{ path('action_edit', {id:action.id}) }}" class="btn btn-secondary">Editer</a>
+                </td>
+            </tr>
+{% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}
+
+
