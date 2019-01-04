@@ -22,52 +22,75 @@ use Symfony\Component\Routing\Annotation\Route;
 class BackController extends AbstractController
 {
     private $repository;
+    /**
+     * @var EntityManagerInterface
+     */
+    private $manager;
 
     /**
      * BackController constructor.
      * @param ActionRepository $repository
+     * @param EntityManagerInterface $manager
      */
-    public function __construct(ActionRepository $repository)
-{
-    $this->repository = $repository;
-}
+    public function __construct(ActionRepository $repository, EntityManagerInterface $manager)
+    {
+        $this->repository = $repository;
+
+        $this->manager = $manager;
+    }
 
     /**
      * @Route("Admin/show",name="admin-show")
      * @return Response
      */
-public function index(){
-        $actions =$this->repository->findAll();
-        return $this->render('backend/admin_show.html.twig',compact('actions'));
-}
+    public function index()
+    {
+        $actions = $this->repository->findAll();
+        return $this->render('backend/admin_show.html.twig', compact('actions'));
+    }
+
+    /**
+     * @Route("action/delete/{id}", name="delete_action", methods="DELETE")
+     * @param Action $action
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse
+     */
+    public function deletedAction(Action $action)
+    {
+
+        $this->manager->remove($action);
+        $this->manager->flush();
+        return $this->redirectToRoute('admin-show');
+
+    }
 
     /**
      * @param Request $request
      * @param Action $action
-     * @param EntityManagerInterface $manager
      * @return \Symfony\Component\HttpFoundation\RedirectResponse|Response
-     * @Route(path="action/{id}/edit", name="action_edit")
+     * @Route("action/{id}/edit", name="action_edit", methods="GET|POST")
+     *
      */
-    public function editAction(Request $request,Action $action, EntityManagerInterface $manager)
+    public function editAction(Request $request, Action $action)
     {
-        $form = $this->createForm(ActionType::class,$action);
+        $form = $this->createForm(ActionType::class, $action);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
 
-            $manager->persist($action);
-            $manager->flush();
+            $this->manager->flush();
 
             return $this->redirectToRoute('admin-show');
         }
 
         return $this->render('backend/action.edit.html.twig', [
-            'actions'=>$action,
-            'form'=>$form->createView()
+            'actions' => $action,
+            'form' => $form->createView()
         ]);
 
 
     }
+
+
 
     /**
      * @Route("add-action", name="Add-action")
@@ -76,10 +99,10 @@ public function index(){
      * @param ActionManager $actionManager
      * @return Response
      */
-    public function addAction( Request $request, EntityManagerInterface $manager, ActionManager $actionManager)
+    public function addAction(Request $request, EntityManagerInterface $manager, ActionManager $actionManager)
     {
         $action = $actionManager->initAction();
-        $form = $this->createForm(ActionType::class,$action);
+        $form = $this->createForm(ActionType::class, $action);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
@@ -88,7 +111,7 @@ public function index(){
             $manager->persist($action);
             $manager->flush();
 
-            return $this->redirectToRoute('homepage');
+            return $this->redirectToRoute('admin-show');
         }
 
         return $this->render('backend/Form-Add-Action.html.twig', ['form' => $form->createView()]);
@@ -96,31 +119,4 @@ public function index(){
 
     }
 
-
-
-    /**
-     * @Route("Add-event", name="Add-event")
-     * @param Request $request
-     * @param EntityManagerInterface $manager
-     * @param ActionManager $actionManager
-     * @return \Symfony\Component\HttpFoundation\RedirectResponse|Response
-     */
-    public function FormOfEvent(Request $request, EntityManagerInterface $manager, ActionManager $actionManager)
-    {
-        $action = $actionManager->initAction();
-        $form = $this->createForm(ActionType::class,$action);
-        $form->handleRequest($request);
-
-        if ($form->isSubmitted() && $form->isValid()) {
-
-            $manager->persist($action);
-            $manager->flush();
-
-            return $this->redirectToRoute('homepage');
-        }
-
-        return $this->render('backend/Form-Add-Event.html.twig', ['form' => $form->createView()]);
-
-
-    }
 }

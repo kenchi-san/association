@@ -51,4 +51,12 @@ class homeController extends AbstractController
         return $this->render('pages/Event.html.twig');
     }
 
+    /**
+     * @Route("dash", name="dash")
+     * @return Response
+     */
+    public function test(): Response
+    {
+    return $this->render('backend/test.html.twig');
+    }
 }
