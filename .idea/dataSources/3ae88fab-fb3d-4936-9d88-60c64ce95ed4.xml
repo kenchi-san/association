@@ -931,13 +931,13 @@
       <Engine>InnoDB</Engine>
       <Collation>utf8mb4_unicode_ci</Collation>
     </table>
-    <table id="235" parent="9" name="image">
-      <Engine>InnoDB</Engine>
-      <Collation>utf8mb4_unicode_ci</Collation>
-    </table>
-    <table id="236" parent="9" name="migration_versions">
+    <table id="235" parent="9" name="migration_versions">
       <Engine>InnoDB</Engine>
       <Collation>utf8_unicode_ci</Collation>
+    </table>
+    <table id="236" parent="9" name="user">
+      <Engine>InnoDB</Engine>
+      <Collation>utf8mb4_unicode_ci</Collation>
     </table>
     <column id="237" parent="234" name="id">
       <Position>1</Position>
@@ -946,64 +946,68 @@
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="238" parent="234" name="image_id">
+    <column id="238" parent="234" name="title">
       <Position>2</Position>
-      <DataType>int(11)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="239" parent="234" name="title">
-      <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="240" parent="234" name="content">
-      <Position>4</Position>
+    <column id="239" parent="234" name="content">
+      <Position>3</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="241" parent="234" name="UNIQ_47CC8C923DA5256D">
-      <ColNames>image_id</ColNames>
-      <Unique>1</Unique>
-      <Type>btree</Type>
-    </index>
+    <column id="240" parent="234" name="image_name">
+      <Position>4</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="241" parent="234" name="updated_at">
+      <Position>5</Position>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
     <key id="242" parent="234" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="243" parent="234" name="UNIQ_47CC8C923DA5256D">
-      <ColNames>image_id</ColNames>
-      <UnderlyingIndexName>UNIQ_47CC8C923DA5256D</UnderlyingIndexName>
+    <column id="243" parent="235" name="version">
+      <Position>1</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="244" parent="235" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>version</ColNames>
+      <Primary>1</Primary>
     </key>
-    <column id="244" parent="235" name="id">
+    <column id="245" parent="236" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="245" parent="235" name="name">
+    <column id="246" parent="236" name="username">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="246" parent="235" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <column id="247" parent="236" name="version">
-      <Position>1</Position>
+    <column id="247" parent="236" name="password">
+      <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <key id="248" parent="236" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>version</ColNames>
+      <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
   </database-model>

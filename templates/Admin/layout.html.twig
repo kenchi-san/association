@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+{% block nav %}
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="{{ path('homepage') }}">Logo de l'assos</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ path('admin_actions_list') }}">Administrer les Actions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ path('admin') }}">Administrer les événements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Administrer les photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ path('admin') }}">Administrer les videos</a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ path('homepage') }}">Retour à l'accueil</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+{% endblock %}
+{% block carroussel %}
+{% endblock %}
+{% block body %}
+
+
+{% endblock %}

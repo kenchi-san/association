@@ -15,7 +15,7 @@ class ActionType extends AbstractType
         $builder
             ->add('title')
             ->add('content')
-            ->add('imageFile', VichImageType::class, ['label'=>false])
+            ->add('imageFile', VichImageType::class, ['label'=>false, 'required' =>false])
         ;
     }
 

@@ -1,0 +1,67 @@
+{% extends 'Admin/layout.html.twig' %}
+{% block body %}
+
+    <div class="container my-5">
+        <div class="card-body text-center">
+            <h4 class="card-title">Special title treatment</h4>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        </div>
+        <div class="card">
+
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th scope="col">Titre</th>
+
+                    <th scope="col">nom de l'image</th>
+                    <th scope="col">Edit List</th>
+
+                </tr>
+                </thead>
+                <tbody>
+                {% for action in actions %}
+                <tr>
+                    <th scope="row"> {{ action.title }}</th>
+
+                    <td>{{ action.imageName }}</td>
+                    <td>
+                        <a class="btn btn-sm btn-info" href="{{ path('admin_action_edit', {id:action.id}) }}"><i class="far fa-edit"></i> edit</a>
+                        <form method="post" action="{{ path('admin_action_delete',{id:action.id}) }}" style="display: inline-block">
+                            <input type="hidden" name="_method" value="DELETE">
+                            <button class="btn btn-danger" >supprimer l'élément</button>
+                        </form>
+                    </td>
+
+
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <a href="{{ path('admin_action_add') }}" class="btn btn-primary">Nouvelle Action</a>
+    </div>
+
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
