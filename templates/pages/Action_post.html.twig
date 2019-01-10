@@ -1,0 +1,86 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <body>
+
+
+    <!-- Page Content -->
+    <div class="container">
+        <!-- Page Heading/Breadcrumbs -->
+        <h1 class="mt-4 mb-3">{{ actions.title }}
+
+        </h1>
+
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="{{ path('homepage') }}">page d'accueil</a>
+            </li>
+
+        </ol>
+
+        <div class="row">
+
+            <!-- Post Content Column -->
+            <div class="col-lg-8">
+
+                <!-- Preview Image -->
+                <img class="img-fluid rounded" src="{{ asset("images/"~ actions.imageName) }}" alt="">
+
+
+                <!-- Date/Time -->
+                <!--<p>Posted on January 1, 2017 at 12:00 PM</p>-->
+
+                {{ actions.content }}
+
+                <hr>
+            </div>
+            <!-- Sidebar Widgets Column -->
+            <div class="col-md-4">
+
+
+                <!-- Categories Widget -->
+                <div class="card my-4">
+                    <h5 class="card-header">Categories</h5>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li>
+                                        <a href="#">Web Design</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">HTML</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Freebies</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li>
+                                        <a href="#">JavaScript</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">CSS</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Tutorials</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+    </body>
+{% endblock %}
+
+

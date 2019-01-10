@@ -10,6 +10,7 @@ namespace App\Controller;
 
 
 use App\Repository\ActionRepository;
+use App\Repository\EventRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
@@ -19,19 +20,26 @@ class HomeController extends AbstractController
 {
 
     /**
-     * @var ActionRepository
-     */
-    private $repository;
-    /**
      * @var EntityManagerInterface
      */
     private $manager;
+    /**
+     * @var ActionRepository
+     */
+    private $actionRepository;
+    /**
+     * @var EventRepository
+     */
+    private $eventRepository;
 
-    public function __construct(ActionRepository $repository, EntityManagerInterface $manager)
+    public function __construct(ActionRepository $actionRepository, EventRepository $eventRepository,EntityManagerInterface $manager)
     {
-        $this->repository = $repository;
         $this->manager = $manager;
+        $this->actionRepository = $actionRepository;
+        $this->eventRepository = $eventRepository;
     }
+
+
 
     /**
      * @Route("/",name="homepage")
@@ -39,7 +47,7 @@ class HomeController extends AbstractController
      */
     public function index()
     {
-        $actions = $this->repository->findAll();
+        $actions = $this->actionRepository->findAll();
         return $this->render('pages/index.html.twig',compact('actions'));
     }
 
@@ -53,23 +61,50 @@ class HomeController extends AbstractController
     }
 
     /**
-     * @Route("post/{id}", name="post")
+     * @Route("action/post/{id}", name="action_post")
      * @param $id
      * @return Response
      */
-    public function post($id)
+    public function postAction($id)
     {
-        $actions = $this->repository->find($id);
-        return $this->render('pages/blog-post.html.twig',compact('actions'));
+        $actions = $this->actionRepository->find($id);
+        return $this->render('pages/Action_post.html.twig',compact('actions'));
     }
 
+    /**
+     * @Route("event/post/{id}", name="event_post")
+     * @param $id
+     * @return Response
+     */
+    public function postEvent($id)
+    {
+        $events = $this->eventRepository->find($id);
+        return $this->render('pages/Event_post.html.twig',compact('events'));
+    }
     /**
      * @Route("event", name="event")
      * @return Response
      */
     public function Event(): Response
     {
-        return $this->render('pages/Event.html.twig');
+        $events = $this->eventRepository->findAll();
+        return $this->render('pages/Event.html.twig',compact('events'));
+    }
+
+    /**
+     * @Route("admin/login/association", name="login")
+     * @return Response
+     */
+    public function login(){
+        return $this->render('Admin/login.html.twig');
+    }
+
+    /**
+     * @Route("galery",name="galery")
+     * @return Response
+     */
+    public function images(){
+        return $this->render('pages/Galery.html.twig');
     }
 
 }

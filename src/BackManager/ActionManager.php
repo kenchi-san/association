@@ -10,12 +10,13 @@ namespace App\BackManager;
 
 
 use App\Entity\Action;
-use Symfony\Component\HttpFoundation\Session\SessionInterface;
-use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class ActionManager
 {
 
+    /**
+     * @return Action
+     */
     public function initAction()
     {
         $action = new Action();

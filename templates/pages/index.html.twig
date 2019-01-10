@@ -35,7 +35,7 @@
                         <a href="#"><img class="card-img-top" src="{{ asset("images/" ~ action.imageName) }}" alt=""></a>
                         <div class="card-body">
                             <h4 class="card-title">
-                                <a href="{{ path('post', {id:action.id}) }}">{{ action.title }}</a>
+                                <a href="{{ path('action_post', {id:action.id}) }}">{{ action.title }}</a>
                             </h4>
                             <p class="card-text">{{ action.content }}</p>
                         </div>
