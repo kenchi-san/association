@@ -11,6 +11,7 @@ namespace App\Controller;
 
 use App\Repository\ActionRepository;
 use App\Repository\EventRepository;
+use App\Repository\GaleryRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
@@ -31,12 +32,24 @@ class HomeController extends AbstractController
      * @var EventRepository
      */
     private $eventRepository;
+    /**
+     * @var GaleryRepository
+     */
+    private $galeryRepository;
 
-    public function __construct(ActionRepository $actionRepository, EventRepository $eventRepository,EntityManagerInterface $manager)
+    /**
+     * HomeController constructor.
+     * @param ActionRepository $actionRepository
+     * @param EventRepository $eventRepository
+     * @param GaleryRepository $galeryRepository
+     * @param EntityManagerInterface $manager
+     */
+    public function __construct(ActionRepository $actionRepository, EventRepository $eventRepository, GaleryRepository $galeryRepository, EntityManagerInterface $manager)
     {
         $this->manager = $manager;
         $this->actionRepository = $actionRepository;
         $this->eventRepository = $eventRepository;
+        $this->galeryRepository = $galeryRepository;
     }
 
 
@@ -100,11 +113,13 @@ class HomeController extends AbstractController
     }
 
     /**
-     * @Route("galery",name="galery")
+     * @Route("galery",name="homegalery")
      * @return Response
      */
     public function images(){
-        return $this->render('pages/Galery.html.twig');
+        $galeries = $this->galeryRepository->findAll();
+
+        return $this->render('pages/Galery.html.twig', compact('galeries'));
     }
 
 }

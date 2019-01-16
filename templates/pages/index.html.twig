@@ -20,7 +20,7 @@
                     voluptatibus. </p>
             </div>
             <div class="col-lg-6">
-                <img class="img-fluid rounded" src="{{ asset('img/DSC01763.JPG') }}" alt="">
+                <img class="img-fluid rounded" src="{{ asset('imges_static/DSC01763.JPG') }}" alt="">
             </div>
         </div>
         <!-- /.row -->
@@ -32,7 +32,7 @@
             {% for action in actions %}
                 <div class="col-lg-4 col-sm-6 portfolio-item">
                     <div class="card h-100">
-                        <a href="#"><img class="card-img-top" src="{{ asset("images/" ~ action.imageName) }}" alt=""></a>
+                        <a href="#"><img class="card-img-top" src="{{ asset("images/" ~ action.imageName) }}" alt="{{ action.title }}"></a>
                         <div class="card-body">
                             <h4 class="card-title">
                                 <a href="{{ path('action_post', {id:action.id}) }}">{{ action.title }}</a>

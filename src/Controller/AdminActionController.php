@@ -10,6 +10,7 @@ namespace App\Controller;
 
 
 use App\BackManager\ActionManager;
+
 use App\Entity\Action;
 use App\Form\ActionType;
 use App\Repository\ActionRepository;
@@ -34,6 +35,7 @@ class AdminActionController extends AbstractController
      */
     private $manager;
 
+
     /**
      * AdminActionController constructor.
      * @param ActionRepository $repository
@@ -41,8 +43,8 @@ class AdminActionController extends AbstractController
      */
     public function __construct(ActionRepository $repository, EntityManagerInterface $manager)
     {
-        $this->repository = $repository;
 
+        $this->repository = $repository;
         $this->manager = $manager;
     }
 

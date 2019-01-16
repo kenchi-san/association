@@ -5,6 +5,7 @@ vich_uploader:
         Action:
             uri_prefix: public/images
             upload_destination: '%kernel.project_dir%/public/images'
+            namer: Vich\UploaderBundle\Naming\PropertyNamer
             inject_on_load: true
             delete_on_update: true
             delete_on_remove: true
@@ -12,6 +13,15 @@ vich_uploader:
         Event:
             uri_prefix: public/images
             upload_destination: '%kernel.project_dir%/public/images'
+            namer: Vich\UploaderBundle\Naming\UniqidNamer
+            inject_on_load: true
+            delete_on_update: true
+            delete_on_remove: true
+
+        Galery:
+            uri_prefix: public/galery
+            upload_destination: '%kernel.project_dir%/public/galery'
+            namer: Vich\UploaderBundle\Naming\UniqidNamer
             inject_on_load: true
             delete_on_update: true
             delete_on_remove: true
