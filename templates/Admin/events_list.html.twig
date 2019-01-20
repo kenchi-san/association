@@ -23,7 +23,7 @@
                 <tr>
                     <th scope="row"> {{ event.title }}</th>
 
-                    <td><img class="card-img-top" src="{{ asset("images/" ~ event.imageName) }}" style="width: 12%;"></td>
+                    <td><img class="card-img-top" src="{{ asset("images_event/" ~ event.imageName) }}" style="width: 12%;"></td>
                     <td>
                         <a class="btn btn-sm btn-info" href="{{ path('admin_event_edit', {id:event.id}) }}"><i class="far fa-edit"></i> edit</a>
                         <form method="post" action="{{ path('admin_event_delete',{id:event.id}) }}" style="display: inline-block">
@@ -39,7 +39,9 @@
         </div>
         <a href="{{ path('admin_event_add') }}" class="btn btn-primary">Nouvelle Evénement</a>
     </div>
-
+    <div class="pagination" >
+        {{ knp_pagination_render(events) }}
+    </div>
 
 {% endblock %}
 

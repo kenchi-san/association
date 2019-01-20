@@ -23,7 +23,7 @@
                 <tr>
                     <th scope="row"> {{ action.title }}</th>
 
-                    <td><img class="card-img-top" src="{{ asset("images/" ~ action.imageName) }}" style="width: 12%;"></td>
+                    <td><img class="card-img-top" src="{{ asset("images_action/" ~ action.imageName) }}" style="width: 12%;"></td>
                     <td>
                         <a class="btn btn-sm btn-info" href="{{ path('admin_action_edit', {id:action.id}) }}"><i class="far fa-edit"></i> edit</a>
                         <form method="post" action="{{ path('admin_action_delete',{id:action.id}) }}" style="display: inline-block">
@@ -38,8 +38,10 @@
             </table>
         </div>
         <a href="{{ path('admin_action_add') }}" class="btn btn-primary">Nouvelle Action</a>
+        <div class="pagination" >
+            {{ knp_pagination_render(actions) }}
+        </div>
     </div>
-
 
 {% endblock %}
 

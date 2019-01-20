@@ -13,6 +13,7 @@ use App\Entity\Galery;
 use App\Form\GaleryType;
 use App\Repository\GaleryRepository;
 use Doctrine\ORM\EntityManagerInterface;
+use Knp\Component\Pager\PaginatorInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
@@ -37,11 +38,16 @@ class AdminGaleryController extends AbstractController
     }
 
     /**
-     *@Route("/galery/list",name="admin_galeries_list")
+     * @Route("/galery/list",name="admin_galeries_list")
+     * @param PaginatorInterface $paginator
+     * @param Request $request
      * @return \Symfony\Component\HttpFoundation\Response
      */
-public function galeryList(){
-    $galeries = $this->galeryRepository->findAll();
+public function galeryList(PaginatorInterface $paginator, Request $request){
+    $galeries = $paginator->paginate(
+        $this->galeryRepository->findAll(),
+        $request->query->getInt('page', 1),
+        10);
 
     return $this->render('Admin/galery_list.html.twig',compact('galeries'));
 }

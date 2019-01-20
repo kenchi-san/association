@@ -39,7 +39,9 @@
         </div>
         <a href="{{ path('admin_galery_add') }}" class="btn btn-primary">Nouvelle Action</a>
     </div>
-
+    <div class="pagination" >
+        {{ knp_pagination_render(galeries) }}
+    </div>
 
 {% endblock %}
 

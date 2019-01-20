@@ -13,6 +13,7 @@ use App\Entity\Event;
 use App\Form\EventType;
 use App\Repository\EventRepository;
 use Doctrine\ORM\EntityManagerInterface;
+use Knp\Component\Pager\PaginatorInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -45,13 +46,17 @@ class AdminEventController extends AbstractController
     }
 
 
-
     /**
      * @Route("/events/list",name="admin_events_list")
+     * @param PaginatorInterface $paginator
+     * @param Request $request
      * @return Response
      */
-    public function eventsList(){
-        $events = $this->repository->findAll();
+    public function eventsList(PaginatorInterface $paginator, Request $request){
+        $events = $paginator->paginate(
+            $this->repository->findAll(),
+            $request->query->getInt('page', 1),
+            10);
         return $this->render('Admin/events_list.html.twig', compact('events'));
     }
 

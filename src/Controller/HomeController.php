@@ -13,7 +13,9 @@ use App\Repository\ActionRepository;
 use App\Repository\EventRepository;
 use App\Repository\GaleryRepository;
 use Doctrine\ORM\EntityManagerInterface;
+use Knp\Component\Pager\PaginatorInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -36,6 +38,10 @@ class HomeController extends AbstractController
      * @var GaleryRepository
      */
     private $galeryRepository;
+    /**
+     * @var PaginatorInterface
+     */
+    private $paginator;
 
     /**
      * HomeController constructor.
@@ -43,25 +49,35 @@ class HomeController extends AbstractController
      * @param EventRepository $eventRepository
      * @param GaleryRepository $galeryRepository
      * @param EntityManagerInterface $manager
+     * @param PaginatorInterface $paginator
      */
-    public function __construct(ActionRepository $actionRepository, EventRepository $eventRepository, GaleryRepository $galeryRepository, EntityManagerInterface $manager)
+    public function __construct(
+        ActionRepository $actionRepository,
+        EventRepository $eventRepository,
+        GaleryRepository $galeryRepository,
+        EntityManagerInterface $manager,
+        PaginatorInterface $paginator)
     {
         $this->manager = $manager;
         $this->actionRepository = $actionRepository;
         $this->eventRepository = $eventRepository;
         $this->galeryRepository = $galeryRepository;
+        $this->paginator = $paginator;
     }
-
 
 
     /**
      * @Route("/",name="homepage")
+     * @param Request $request
      * @return Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $actions = $this->actionRepository->findAll();
-        return $this->render('pages/index.html.twig',compact('actions'));
+        $actions = $this->paginator->paginate(
+            $this->actionRepository->findAll(),
+            $request->query->getInt('page', 1),
+            6);
+        return $this->render('pages/index.html.twig', compact('actions'));
     }
 
     /**
@@ -81,7 +97,7 @@ class HomeController extends AbstractController
     public function postAction($id)
     {
         $actions = $this->actionRepository->find($id);
-        return $this->render('pages/Action_post.html.twig',compact('actions'));
+        return $this->render('pages/Action_post.html.twig', compact('actions'));
     }
 
     /**
@@ -92,32 +108,35 @@ class HomeController extends AbstractController
     public function postEvent($id)
     {
         $events = $this->eventRepository->find($id);
-        return $this->render('pages/Event_post.html.twig',compact('events'));
-    }
-    /**
-     * @Route("event", name="event")
-     * @return Response
-     */
-    public function Event(): Response
-    {
-        $events = $this->eventRepository->findAll();
-        return $this->render('pages/Event.html.twig',compact('events'));
+        return $this->render('pages/Event_post.html.twig', compact('events'));
     }
 
     /**
-     * @Route("admin/login/association", name="login")
+     * @Route("event", name="event")
+     * @param Request $request
      * @return Response
      */
-    public function login(){
-        return $this->render('Admin/login.html.twig');
+    public function Event(Request $request): Response
+    {
+        $events = $this->paginator->paginate(
+            $this->eventRepository->findAll(),
+            $request->query->getInt('page', 1),
+            10);
+        return $this->render('pages/Event.html.twig', compact('events'));
     }
+
 
     /**
      * @Route("galery",name="homegalery")
+     * @param Request $request
      * @return Response
      */
-    public function images(){
-        $galeries = $this->galeryRepository->findAll();
+    public function images(Request $request)
+    {
+        $galeries = $this->paginator->paginate(
+            $this->galeryRepository->findAll(),
+            $request->query->getInt('page', 1),
+            10);
 
         return $this->render('pages/Galery.html.twig', compact('galeries'));
     }

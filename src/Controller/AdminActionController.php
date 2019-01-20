@@ -15,6 +15,7 @@ use App\Entity\Action;
 use App\Form\ActionType;
 use App\Repository\ActionRepository;
 use Doctrine\ORM\EntityManagerInterface;
+use Knp\Component\Pager\PaginatorInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -59,10 +60,15 @@ class AdminActionController extends AbstractController
 
     /**
      * @Route("/actions/list",name="admin_actions_list")
+     * @param PaginatorInterface $paginator
+     * @param Request $request
      * @return Response
      */
-    public function actionsList(){
-        $actions = $this->repository->findAll();
+    public function actionsList(PaginatorInterface $paginator, Request $request){
+        $actions = $paginator->paginate(
+           $this->repository->findAll(),
+            $request->query->getInt('page', 1),
+            10);
         return $this->render('Admin/actions_list.html.twig', compact('actions'));
     }
 
@@ -93,7 +99,6 @@ class AdminActionController extends AbstractController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-
             $this->manager->flush();
 
             return $this->redirectToRoute('admin_actions_list');
