@@ -3,6 +3,7 @@
 namespace App\Form;
 
 use App\Entity\Action;
+use FOS\CKEditorBundle\Form\Type\CKEditorType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
@@ -14,7 +15,7 @@ class ActionType extends AbstractType
     {
         $builder
             ->add('title')
-            ->add('content')
+            ->add('content', CKEditorType::class, array('input_sync' => true))
             ->add('imageFile', VichImageType::class, ['label'=>false, 'required' =>false])
         ;
     }

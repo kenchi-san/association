@@ -114,6 +114,8 @@ class Action
         return $this->imageName;
     }
 
-
+public function getContentStrip(){
+        return strip_tags($this->content);
+}
 
 }
