@@ -66,7 +66,7 @@ class AdminActionController extends AbstractController
      */
     public function actionsList(PaginatorInterface $paginator, Request $request){
         $actions = $paginator->paginate(
-           $this->repository->findAll(),
+           $this->repository->OrderByEsc(),
             $request->query->getInt('page', 1),
             10);
         return $this->render('Admin/actions_list.html.twig', compact('actions'));

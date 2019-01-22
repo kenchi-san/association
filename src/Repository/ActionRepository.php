@@ -18,6 +18,17 @@ class ActionRepository extends ServiceEntityRepository
     {
         parent::__construct($registry, Action::class);
     }
+//SELECT * FROM `action` ORDER BY `action`.`id` DESC
+
+    public function OrderByEsc()
+    {
+        return $this->createQueryBuilder('a')
+            ->orderBy('a.id', 'DESC')
+            ->getQuery()
+            ->getResult()
+            ;
+    }
+
 
     // /**
     //  * @return Action[] Returns an array of Action objects

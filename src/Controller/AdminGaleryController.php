@@ -45,7 +45,7 @@ class AdminGaleryController extends AbstractController
      */
 public function galeryList(PaginatorInterface $paginator, Request $request){
     $galeries = $paginator->paginate(
-        $this->galeryRepository->findAll(),
+        $this->galeryRepository->OrderByEsc(),
         $request->query->getInt('page', 1),
         10);
 

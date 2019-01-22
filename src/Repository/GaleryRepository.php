@@ -19,6 +19,14 @@ class GaleryRepository extends ServiceEntityRepository
         parent::__construct($registry, Galery::class);
     }
 
+    public function OrderByEsc()
+    {
+        return $this->createQueryBuilder('g')
+            ->orderBy('g.id', 'DESC')
+            ->getQuery()
+            ->getResult()
+            ;
+    }
     // /**
     //  * @return Galery[] Returns an array of Galery objects
     //  */

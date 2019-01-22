@@ -74,7 +74,7 @@ class HomeController extends AbstractController
     public function index(Request $request)
     {
         $actions = $this->paginator->paginate(
-            $this->actionRepository->findAll(),
+            $this->actionRepository->OrderByEsc(),
             $request->query->getInt('page', 1),
             6);
         return $this->render('pages/index.html.twig', compact('actions'));
@@ -119,7 +119,7 @@ class HomeController extends AbstractController
     public function Event(Request $request): Response
     {
         $events = $this->paginator->paginate(
-            $this->eventRepository->findAll(),
+            $this->eventRepository->OrderByEsc(),
             $request->query->getInt('page', 1),
             10);
         return $this->render('pages/Event.html.twig', compact('events'));
@@ -134,11 +134,26 @@ class HomeController extends AbstractController
     public function images(Request $request)
     {
         $galeries = $this->paginator->paginate(
-            $this->galeryRepository->findAll(),
+            $this->galeryRepository->OrderByEsc(),
             $request->query->getInt('page', 1),
             10);
 
         return $this->render('pages/Galery.html.twig', compact('galeries'));
+    }
+
+    /**
+     * @Route("multimedia", name="homemultimedia")
+     * @param PaginatorInterface $paginator
+     * @param Request $request
+     * @return mixed
+     */
+    public function multimediaList(PaginatorInterface $paginator, Request $request){
+        /*$galeries = $paginator->paginate(
+            $this->galeryRepository->findAll(),
+            $request->query->getInt('page', 1),
+            10);*/
+
+        return $this->render('pages/multimedia.html.twig');
     }
 
 }

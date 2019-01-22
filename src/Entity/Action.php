@@ -46,7 +46,6 @@ class Action
     private $imageName;
 
 
-
     /**
      * @ORM\Column(type="datetime")
      *
@@ -54,24 +53,7 @@ class Action
      */
     private $updatedAt;
 
-    /**
-     *
-     * @param File|\Symfony\Component\HttpFoundation\File\UploadedFile $imageFile
-     * @throws \Exception
-     */
-    public function setImageFile(?File $imageFile = null): void
-    {
-        $this->imageFile = $imageFile;
-
-        if (null !== $imageFile) {
-            // It is required that at least one field changes if you are using doctrine
-            // otherwise the event listeners won't be called and the file is lost
-            $this->updatedAt = new \DateTimeImmutable();
-        }
-    }
-
-
- public function getId(): ?int
+    public function getId(): ?int
     {
         return $this->id;
     }
@@ -99,14 +81,26 @@ class Action
 
         return $this;
     }
+
     public function getImageFile(): ?File
     {
         return $this->imageFile;
     }
 
-    public function setImageName(?string $imageName): void
+    /**
+     *
+     * @param File|\Symfony\Component\HttpFoundation\File\UploadedFile $imageFile
+     * @throws \Exception
+     */
+    public function setImageFile(?File $imageFile = null): void
     {
-        $this->imageName = $imageName;
+        $this->imageFile = $imageFile;
+
+        if (null !== $imageFile) {
+            // It is required that at least one field changes if you are using doctrine
+            // otherwise the event listeners won't be called and the file is lost
+            $this->updatedAt = new \DateTimeImmutable();
+        }
     }
 
     public function getImageName(): ?string
@@ -114,8 +108,14 @@ class Action
         return $this->imageName;
     }
 
-public function getContentStrip(){
+    public function setImageName(?string $imageName): void
+    {
+        $this->imageName = $imageName;
+    }
+
+    public function getContentStrip()
+    {
         return strip_tags($this->content);
-}
+    }
 
 }
