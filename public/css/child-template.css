@@ -1,0 +1,9 @@
+/*logo*/
+.logo {
+    width: 15%;
+    margin-left: -17%;
+}
+
+.ml-auto, .mx-auto {
+    margin-left: -51%;
+}

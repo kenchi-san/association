@@ -10,14 +10,19 @@
 
     <title>Modern Business - Start Bootstrap Template</title>
     {% block stylesheets %}
+
+
+
     <!-- Bootstrap core CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="{{ asset('css/modern-business.css') }}" rel="stylesheet">
         <!--Custom style for Galery Template-->
         <link href="{{ asset('css/galery.css') }}" rel="stylesheet">
-<!--Custom styles for multimedia template-->
+    <!-- Custom styles for this template -->
+    <link href="{{ asset('css/modern-business.css') }}" rel="stylesheet">
+
+        <!--Custom styles for nav template-->
+        <link href="{{  asset('css/child-template.css') }}" rel="stylesheet">
 
 {% endblock %}
 </head>
@@ -27,7 +32,11 @@
 <!-- Navigation -->
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="{{ path('homepage') }}">Logo de l'assos</a>
+        <div class="logo">
+            <a class="navbar-brand" href="{{ path('homepage') }}"><img class="card-img-top" src="{{ asset("images_static/Logo FB.jpg") }}" alt="swahilisa"></a>
+
+        </div>
+
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>

@@ -47,7 +47,7 @@ public function galeryList(PaginatorInterface $paginator, Request $request){
     $galeries = $paginator->paginate(
         $this->galeryRepository->OrderByEsc(),
         $request->query->getInt('page', 1),
-        10);
+        5);
 
     return $this->render('Admin/galery_list.html.twig',compact('galeries'));
 }

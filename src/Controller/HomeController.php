@@ -12,6 +12,7 @@ namespace App\Controller;
 use App\Repository\ActionRepository;
 use App\Repository\EventRepository;
 use App\Repository\GaleryRepository;
+use App\Repository\MultimediaRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Knp\Component\Pager\PaginatorInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -42,6 +43,10 @@ class HomeController extends AbstractController
      * @var PaginatorInterface
      */
     private $paginator;
+    /**
+     * @var MultimediaRepository
+     */
+    private $multimediaRepository;
 
     /**
      * HomeController constructor.
@@ -50,19 +55,22 @@ class HomeController extends AbstractController
      * @param GaleryRepository $galeryRepository
      * @param EntityManagerInterface $manager
      * @param PaginatorInterface $paginator
+     * @param MultimediaRepository $multimediaRepository
      */
     public function __construct(
         ActionRepository $actionRepository,
         EventRepository $eventRepository,
         GaleryRepository $galeryRepository,
         EntityManagerInterface $manager,
-        PaginatorInterface $paginator)
+        PaginatorInterface $paginator,
+        MultimediaRepository $multimediaRepository)
     {
         $this->manager = $manager;
         $this->actionRepository = $actionRepository;
         $this->eventRepository = $eventRepository;
         $this->galeryRepository = $galeryRepository;
         $this->paginator = $paginator;
+        $this->multimediaRepository = $multimediaRepository;
     }
 
 
@@ -148,12 +156,12 @@ class HomeController extends AbstractController
      * @return mixed
      */
     public function multimediaList(PaginatorInterface $paginator, Request $request){
-        /*$galeries = $paginator->paginate(
-            $this->galeryRepository->findAll(),
+        $videos = $paginator->paginate(
+            $this->multimediaRepository->OrderByEsc(),
             $request->query->getInt('page', 1),
-            10);*/
+            10);
 
-        return $this->render('pages/multimedia.html.twig');
+        return $this->render('pages/multimedia.html.twig', compact('videos'));
     }
 
 }

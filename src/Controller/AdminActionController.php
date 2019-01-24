@@ -42,11 +42,11 @@ class AdminActionController extends AbstractController
      * @param ActionRepository $repository
      * @param EntityManagerInterface $manager
      */
-    public function __construct(ActionRepository $repository, EntityManagerInterface $manager)
+    public function __construct( EntityManagerInterface $manager, ActionRepository $repository)
     {
 
-        $this->repository = $repository;
         $this->manager = $manager;
+        $this->repository = $repository;
     }
 
     /**
@@ -68,7 +68,7 @@ class AdminActionController extends AbstractController
         $actions = $paginator->paginate(
            $this->repository->OrderByEsc(),
             $request->query->getInt('page', 1),
-            10);
+            5);
         return $this->render('Admin/actions_list.html.twig', compact('actions'));
     }
 

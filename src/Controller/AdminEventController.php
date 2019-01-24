@@ -56,7 +56,7 @@ class AdminEventController extends AbstractController
         $events = $paginator->paginate(
             $this->repository->OrderByEsc(),
             $request->query->getInt('page', 1),
-            10);
+            5);
         return $this->render('Admin/events_list.html.twig', compact('events'));
     }
 
