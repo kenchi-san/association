@@ -89,6 +89,14 @@ class HomeController extends AbstractController
     }
 
     /**
+     * @Route("/contact-us",name="contactUs")
+     * @return Response
+     */
+    public function contactUs(){
+        return $this->render('pages/ContactUs.html.twig');
+    }
+
+    /**
      * @Route("about", name="team")
      * @return Response
      */
@@ -124,7 +132,7 @@ class HomeController extends AbstractController
      * @param Request $request
      * @return Response
      */
-    public function Event(Request $request): Response
+    public function event(Request $request): Response
     {
         $events = $this->paginator->paginate(
             $this->eventRepository->OrderByEsc(),
