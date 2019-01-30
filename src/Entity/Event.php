@@ -117,4 +117,6 @@ class Event
         return strip_tags($this->content);
     }
 
+
+
 }

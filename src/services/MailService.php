@@ -9,6 +9,7 @@
 namespace App\services;
 
 
+use App\Entity\Contact;
 use Twig\Environment;
 
 class MailService
@@ -18,7 +19,7 @@ class MailService
     /**
      * @var Environment
      */
-    private $environment;
+    private $twig;
     /**
      * @var \Swift_Mailer
      */
@@ -27,35 +28,32 @@ class MailService
     /**
      * MailService constructor.
      * @param $swahilisaMailer
-     * @param Environment $environment
+     * @param Environment $twig
      * @param \Swift_Mailer $mailer
      */
     public function __construct(
         $swahilisaMailer,
-        Environment $environment,
+        Environment $twig,
         \Swift_Mailer $mailer)
     {
         $this->swahilisaMailer = $swahilisaMailer;
-        $this->environment = $environment;
+        $this->environment = $twig;
         $this->mailer = $mailer;
     }
 
-    public function index($name, \Swift_Mailer $mailer)
+    public function sendTheQuestionByMail(Contact $contact)
     {
-        $message = (new \Swift_Message('Nouvelle évènement chez swahilisa'))
-            ->setFrom($this->swahilisaMailer)
-            ->setTo('charon.hugo@gmail.com')
-            ->setBody(
-                $this->renderView(
-                // templates/emails/registration.html.twig
-                    'emails/registration.html.twig',
-                    ['name' => $name]
+        $mail = (new \Swift_Message('Nouvelle évènement chez swahilisa'));
+            $mail->setFrom($contact->getMail());
+            $mail->setTo($this->swahilisaMailer);
+            $mail->setBody(
+                $this->twig->render(
+                    'Mail/ContactGuest.html.twig',
+                    ['GuestQuestion' => $contact]
                 ),
                 'text/html'
             );
 
-        $mailer->send($message);
-
-        return $this->render();
+        $this->mailer->send($mail);
     }
 }

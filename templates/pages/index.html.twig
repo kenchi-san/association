@@ -32,12 +32,12 @@
             {% for action in actions %}
                 <div class="col-lg-4 col-sm-6 portfolio-item">
                     <div class="card h-100">
-                        <a href="#"><img class="card-img-top" src="{{ asset("images_action/" ~ action.imageName) }}" alt="{{ action.title }}"></a>
+                        <a href="{{ path('action_post', {id:action.id}) }}"><img class="card-img-top" src="{{ asset("images_action/" ~ action.imageName) }}" alt="{{ action.title }}"></a>
                         <div class="card-body">
                             <h4 class="card-title">
                                 <a href="{{ path('action_post', {id:action.id}) }}">{{ action.title }}</a>
                             </h4>
-                            <p class="card-text">{{ action.contentStrip |truncate(30, false)}}</p>
+                            <p class="card-text">{{ action.contentStrip |truncate(250, false)}}</p>
                         </div>
                     </div>
                 </div>

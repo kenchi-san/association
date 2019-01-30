@@ -88,13 +88,7 @@ class HomeController extends AbstractController
         return $this->render('pages/index.html.twig', compact('actions'));
     }
 
-    /**
-     * @Route("/contact-us",name="contactUs")
-     * @return Response
-     */
-    public function contactUs(){
-        return $this->render('pages/ContactUs.html.twig');
-    }
+
 
     /**
      * @Route("about", name="team")
