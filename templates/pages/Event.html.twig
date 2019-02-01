@@ -30,7 +30,7 @@
             </div>
             <div class="col-lg-6">
               <h2 class="card-title">{{ event.title }}</h2>
-              <p class="card-text">{{ event.contentStrip |truncate(250, false) }}</p>
+              <p class="card-text">{{ event.contentStrip |truncate(250, false) | raw }}</p>
               <a href="{{ path('event_post', {id:event.id}) }}" class="btn btn-primary">Lire la suite &rarr;</a>
             </div>
           </div>

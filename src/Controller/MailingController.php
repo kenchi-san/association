@@ -59,4 +59,11 @@ class MailingController extends AbstractController
         return $this->render('pages/ContactUs.html.twig', ['form' => $form->createView()]);
 
     }
+
+    /**
+     * @Route("/Mailing/forget-password",name="forgotPassword")
+     */
+    public function passwordForgot() {
+        $this->render('');
+    }
 }

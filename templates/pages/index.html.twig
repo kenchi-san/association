@@ -37,7 +37,7 @@
                             <h4 class="card-title">
                                 <a href="{{ path('action_post', {id:action.id}) }}">{{ action.title }}</a>
                             </h4>
-                            <p class="card-text">{{ action.contentStrip |truncate(250, false)}}</p>
+                            <p class="card-text">{{ action.contentStrip | truncate(250, true) | raw}}</p>
                         </div>
                     </div>
                 </div>
