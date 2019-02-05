@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="limiter">
+
+        <div class="container-login100"
+             style="background-image: url({{ asset('images_login/images_static-01.jpg') }});">
+            <div class="wrap-login100 p-t-190 p-b-30">
+                <div class="messageForUser">
+                    <h3>Rentrez Votre adresse e-mail :</h3>
+                </div>
+                {{ form_start(form) }}
+                {{ form_row(form.mail) }}
+                <button class="btn btn-success"> envoyer </button>
+                {{ form_end(form) }}
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}

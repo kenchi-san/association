@@ -10,6 +10,7 @@ namespace App\services;
 
 
 use App\Entity\Contact;
+use App\Entity\User;
 use Twig\Environment;
 
 class MailService
@@ -41,19 +42,38 @@ class MailService
         $this->mailer = $mailer;
     }
 
+
+    /**
+     * @param Contact $contact
+     * @throws \Twig_Error_Loader
+     * @throws \Twig_Error_Runtime
+     * @throws \Twig_Error_Syntax
+     */
     public function sendTheQuestionByMail(Contact $contact)
     {
-        $mail = (new \Swift_Message('Nouvelle évènement chez swahilisa'));
-            $mail->setFrom($contact->getMail());
-            $mail->setTo($this->swahilisaMailer);
-            $mail->setBody(
-                $this->twig->render(
-                    'Mail/ContactGuest.html.twig',
-                    ['GuestQuestion' => $contact]
-                ),
-                'text/html'
-            );
+        $mailer = new \Swift_Message('Nouvelle question');
+        $mailer->setFrom([$contact->getMail() => $contact->getName()]);
+        $mailer->setTo($this->swahilisaMailer);
+        //$urlLogo = $mail->embed(\Swift_Image::fromPath('images_static/LogoFB.jpg'));
 
-        $this->mailer->send($mail);
+        $mailer->setBody(
+            $this->environment->render('Mail/ContactGuest.html.twig', ['GuestQuestion' => $contact]), 'text/html'
+        );
+
+        $this->mailer->send($mailer);
+    }
+
+
+
+    public function sendTheLinkForResetPassword(User $user){
+        $mailer = new \Swift_Message('Réinitialisation du mot de passe');
+        $mailer->setFrom($this->swahilisaMailer);
+        $mailer->setTo($user->getMail());
+        $mailer->setBody(
+            $this->environment->render('security/ResetPassword.html.twig', ['resetPassword' => $user]), 'text/html'
+        );
+
+        $this->mailer->send($mailer);
+
     }
 }
