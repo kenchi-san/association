@@ -10,14 +10,17 @@ namespace App\Controller;
 
 
 use App\Entity\Contact;
+use App\Entity\User;
 use App\Form\ContactType;
 use App\Form\ForgotPasswordType;
+use App\Form\NewPasswordType;
 use App\Repository\UserRepository;
 use App\services\MailService;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 
 class MailingController extends AbstractController
 {
@@ -66,17 +69,18 @@ class MailingController extends AbstractController
             $data = $form->getData();
             $user = $userRepository->findOneBy(['mail' => $data['mail']]);
 
-            if($user){
+            if ($user) {
                 // faire qqch
                 $user->setToken(md5(random_bytes(10)));
                 $manager->persist($user);
                 $manager->flush();
+
                 $mailService->sendTheLinkForResetPassword($user);
 
 
                 $this->addFlash('success', 'Le mail de réinitiliastion du mdp vient d\'être envoyé');
 
-            }else{
+            } else {
                 $this->addFlash('danger', 'Error');
             }
 
@@ -87,11 +91,32 @@ class MailingController extends AbstractController
 
     /**
      * @Route("/new-password/{token}",name="newPassword")
-     * @param $password
+     * @param Request $request
+     * @param EntityManagerInterface $manager
+     * @param User $user
+     * @param UserPasswordEncoderInterface $encoder
+     * @return \Symfony\Component\HttpFoundation\Response
      */
-public function newPassWordForm($token){
+    public function newPassWordForm(Request $request, EntityManagerInterface $manager, UserPasswordEncoderInterface $encoder, User $user)
+    {
+        $form = $this->createForm(NewPasswordType::class, $user);
+        $form->handleRequest($request);
+        if ($form->isSubmitted() && $form->isValid()) {
+            $newpassword = $form["password"]->getData();
+         $user->setPassword($encoder->encodePassword($user,$newpassword ));
 
-return $this->render('security/SettupNewPassWord.html.twig',compact('result'));
 
+            $manager->persist($user);
+            $manager->flush();
+            $this->addFlash('success', 'Le mot de passe a bien été changé');
+            return $this->redirectToRoute('homepage');
+
+        }
+
+        return $this->render('security/SettupNewPassWord.html.twig', ['form' => $form->createView()]);
+
+
+    }
 }
-}
+
+

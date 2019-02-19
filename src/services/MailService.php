@@ -70,7 +70,7 @@ class MailService
         $mailer->setFrom($this->swahilisaMailer);
         $mailer->setTo($user->getMail());
         $mailer->setBody(
-            $this->environment->render('security/ResetPassword.html.twig', ['resetPassword' => $user]), 'text/html'
+            $this->environment->render('security/ResetPassword.html.twig', ['user' => $user]), 'text/html'
         );
 
         $this->mailer->send($mailer);
