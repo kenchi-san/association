@@ -8,15 +8,20 @@
         <div class="row">
             <div class="col-lg-6">
                 <h2>Notre Ecole</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores commodi consectetur corporis cumque,
-                    ex expedita, facere fuga iusto minus molestias necessitatibus officia reiciendis sapiente sit tempore.
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores commodi consectetur corporis
+                    cumque,
+                    ex expedita, facere fuga iusto minus molestias necessitatibus officia reiciendis sapiente sit
+                    tempore.
                     Consequatur, necessitatibus nulla! Amet aperiam commodi distinctio ea inventore magni nihil quam
-                    recusandae, repudiandae rerum. Culpa cum dolorem dolores harum itaque molestiae nobis, possimus totam!
+                    recusandae, repudiandae rerum. Culpa cum dolorem dolores harum itaque molestiae nobis, possimus
+                    totam!
                     Ab aliquam, animi aspernatur aut blanditiis consectetur cum doloremque error inventore ipsam minima
                     natus nemo non numquam odio possimus quasi quia quibusdam reprehenderit temporibus! Ab accusantium
-                    aliquid amet aspernatur aut consequatur consequuntur corporis delectus dignissimos eaque eius enim esse
+                    aliquid amet aspernatur aut consequatur consequuntur corporis delectus dignissimos eaque eius enim
+                    esse
                     est explicabo hic ipsam itaque iure labore laudantium molestiae molestias nam nesciunt non numquam
-                    placeat praesentium quam quos ratione reiciendis repellat sequi sint sunt temporibus vel velit, veniam
+                    placeat praesentium quam quos ratione reiciendis repellat sequi sint sunt temporibus vel velit,
+                    veniam
                     voluptatibus. </p>
             </div>
             <div class="col-lg-6">
@@ -32,19 +37,21 @@
             {% for action in actions %}
                 <div class="col-lg-4 col-sm-6 portfolio-item">
                     <div class="card h-100">
-                        <a href="{{ path('action_post', {id:action.id}) }}"><img class="card-img-top" src="{{ asset("images_action/" ~ action.imageName) }}" alt="{{ action.title }}"></a>
+                        <a href="{{ path('action_post', {id:action.id}) }}"><img class="card-img-top"
+                                                                                 src="{{ asset("images_action/" ~ action.imageName) }}"
+                                                                                 alt="{{ action.title }}"></a>
                         <div class="card-body">
                             <h4 class="card-title">
                                 <a href="{{ path('action_post', {id:action.id}) }}">{{ action.title }}</a>
                             </h4>
-                            <p class="card-text">{{ action.contentStrip | truncate(250, true) | raw}}</p>
+                            <p class="card-text">{{ action.contentStrip | truncate(250, true) | raw }}</p>
                         </div>
                     </div>
                 </div>
             {% endfor %}
 
         </div>
-        <div class="pagination" >
+        <div class="pagination">
             {{ knp_pagination_render(actions) }}
         </div>
 
@@ -59,10 +66,13 @@
         <!-- Call to Action Section -->
         <div class="row mb-4">
             <div class="col-md-8">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad consequuntur deserunt dolore, doloremque
+                dolores dolorum, et fuga illo iste mollitia sequi! Accusamus, blanditiis deserunt dolores itaque natus
+                nobis officiis quisquam ut! Deleniti eius fuga iste mollitia temporibus. Asperiores corporis cumque
+                dicta eligendi explicabo harum ipsam natus nemo quo ullam!
             </div>
             <div class="col-md-4">
-                <a class="btn btn-lg btn-secondary btn-block" href="#">Call to Action</a>
+                <a class="btn btn-lg btn-secondary btn-block" href="{{ path('donationpage') }}">Devenir parrain</a>
             </div>
         </div>
 
