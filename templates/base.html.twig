@@ -34,7 +34,9 @@
         <link href="{{ asset('css/contact-form.css') }}" rel="stylesheet">
         <link href="{{ asset('css/ourTeam.css') }}" rel="stylesheet">
 
-
+        <link href="{{ asset('css/payementPage.css') }}" rel="stylesheet">
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <!------ Include the above in your HEAD tag ---------->
 
 
     {% endblock %}
@@ -61,7 +63,7 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
 
-                        <a class="nav-link" href="#" style="text-decoration-color: #2ca02c">Devenez Parrain /
+                        <a class="nav-link" href="{{ path('homedonation') }}" style="text-decoration-color: #2ca02c">Devenez Parrain /
                             Adhérent </a>
                     </li>
                     <li class="nav-item">

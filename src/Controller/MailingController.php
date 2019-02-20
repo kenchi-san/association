@@ -81,7 +81,7 @@ class MailingController extends AbstractController
                 $this->addFlash('success', 'Le mail de réinitiliastion du mdp vient d\'être envoyé');
 
             } else {
-                $this->addFlash('danger', 'Error');
+                $this->addFlash('danger', 'Cette utilisateur n\'existe pas');
             }
 
 

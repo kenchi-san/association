@@ -166,4 +166,20 @@ class HomeController extends AbstractController
         return $this->render('pages/multimedia.html.twig', compact('videos'));
     }
 
+    /**
+     * @Route("info-parrain", name="homedonation")
+     */
+    public function parrainOrDonationPage(){
+
+        return $this->render('pages/parrain.html.twig');
+    }
+
+    /**
+     * @Route("payement/donation",name="donationpage")
+     * @return Response
+     */
+    public function payementPage(){
+        return $this->render('pages/payementPage.html.twig');
+    }
+
 }
