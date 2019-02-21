@@ -12,7 +12,8 @@ class ForgotPasswordType extends AbstractType
     {
         $builder
             ->add('mail', EmailType::class, [
-                'required' => true
+                'required' => true,
+                'label'=>false
             ])
         ;
     }
