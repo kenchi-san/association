@@ -9,9 +9,11 @@
 namespace App\Controller;
 
 
+use App\Entity\IntroductionSchool;
 use App\Repository\ActionRepository;
 use App\Repository\EventRepository;
 use App\Repository\GaleryRepository;
+use App\Repository\IntroductionSchoolRepository;
 use App\Repository\MultimediaRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Knp\Component\Pager\PaginatorInterface;
@@ -47,6 +49,11 @@ class HomeController extends AbstractController
      * @var MultimediaRepository
      */
     private $multimediaRepository;
+    /**
+     * @var IntroductionSchoolRepository
+     */
+    private $introductionSchool;
+
 
     /**
      * HomeController constructor.
@@ -56,6 +63,7 @@ class HomeController extends AbstractController
      * @param EntityManagerInterface $manager
      * @param PaginatorInterface $paginator
      * @param MultimediaRepository $multimediaRepository
+     * @param IntroductionSchoolRepository $introductionSchool
      */
     public function __construct(
         ActionRepository $actionRepository,
@@ -63,7 +71,8 @@ class HomeController extends AbstractController
         GaleryRepository $galeryRepository,
         EntityManagerInterface $manager,
         PaginatorInterface $paginator,
-        MultimediaRepository $multimediaRepository)
+        MultimediaRepository $multimediaRepository,
+IntroductionSchoolRepository $introductionSchool)
     {
         $this->manager = $manager;
         $this->actionRepository = $actionRepository;
@@ -71,6 +80,7 @@ class HomeController extends AbstractController
         $this->galeryRepository = $galeryRepository;
         $this->paginator = $paginator;
         $this->multimediaRepository = $multimediaRepository;
+        $this->introductionSchool = $introductionSchool;
     }
 
 
@@ -81,12 +91,17 @@ class HomeController extends AbstractController
      */
     public function index(Request $request)
     {
+
+
         $actions = $this->paginator->paginate(
             $this->actionRepository->OrderByEsc(),
             $request->query->getInt('page', 1),
             6);
-        return $this->render('pages/index.html.twig', compact('actions'));
+        $intro=$this->introductionSchool->findAll();
+
+        return $this->render('pages/index.html.twig', ['actions'=>$actions,'intro'=>$intro ]);
     }
+
 
 
 
@@ -181,5 +196,6 @@ class HomeController extends AbstractController
     public function payementPage(){
         return $this->render('pages/payementPage.html.twig');
     }
+
 
 }

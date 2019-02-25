@@ -7,26 +7,19 @@
         <!-- Features Section -->
         <div class="row">
             <div class="col-lg-6">
-                <h2>Notre Ecole</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores commodi consectetur corporis
-                    cumque,
-                    ex expedita, facere fuga iusto minus molestias necessitatibus officia reiciendis sapiente sit
-                    tempore.
-                    Consequatur, necessitatibus nulla! Amet aperiam commodi distinctio ea inventore magni nihil quam
-                    recusandae, repudiandae rerum. Culpa cum dolorem dolores harum itaque molestiae nobis, possimus
-                    totam!
-                    Ab aliquam, animi aspernatur aut blanditiis consectetur cum doloremque error inventore ipsam minima
-                    natus nemo non numquam odio possimus quasi quia quibusdam reprehenderit temporibus! Ab accusantium
-                    aliquid amet aspernatur aut consequatur consequuntur corporis delectus dignissimos eaque eius enim
-                    esse
-                    est explicabo hic ipsam itaque iure labore laudantium molestiae molestias nam nesciunt non numquam
-                    placeat praesentium quam quos ratione reiciendis repellat sequi sint sunt temporibus vel velit,
-                    veniam
-                    voluptatibus. </p>
+                {% for IntroductionSchool in intro %}
+
+                <h2>{{ IntroductionSchool.title }}</h2>
+                <p>{{ IntroductionSchool.content |raw }}
+
+
             </div>
             <div class="col-lg-6">
-                <img class="img-fluid rounded" src="{{ asset('images_static/DSC01763.JPG') }}" alt="">
+                <img class="card-img-top"
+                     src="{{ asset("images_action/" ~ IntroductionSchool.imageName) }}"
+                     alt="{{ IntroductionSchool.title }}">
             </div>
+            {% endfor %}
         </div>
         <!-- /.row -->
 

@@ -52,12 +52,14 @@ class AdminEventController extends AbstractController
      * @param Request $request
      * @return Response
      */
-    public function eventsList(PaginatorInterface $paginator, Request $request){
+    public function eventsList(PaginatorInterface $paginator, Request $request)
+    {
         $events = $paginator->paginate(
             $this->repository->OrderByEsc(),
             $request->query->getInt('page', 1),
             5);
         return $this->render('Admin/events_list.html.twig', compact('events'));
+
     }
 
     /**
