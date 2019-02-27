@@ -31,6 +31,7 @@ class Galery
      *
      * @Vich\UploadableField(mapping="Galery", fileNameProperty="imageName")
      *
+     *
      * @var File
      */
     private $imageFile;
