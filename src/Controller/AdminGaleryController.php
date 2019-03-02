@@ -38,7 +38,7 @@ class AdminGaleryController extends AbstractController
     }
 
     /**
-     * @Route("/galery/list",name="admin_galeries_list")
+     * @Route("admin/galery/list",name="admin_galeries_list")
      * @param PaginatorInterface $paginator
      * @param Request $request
      * @return \Symfony\Component\HttpFoundation\Response
@@ -54,7 +54,7 @@ public function galeryList(PaginatorInterface $paginator, Request $request){
 
 
     /**
-     * @Route("/galery/add",name="admin_galery_add")
+     * @Route("admin/galery/add",name="admin_galery_add")
      * @param Request $request
      * @return \Symfony\Component\HttpFoundation\RedirectResponse|\Symfony\Component\HttpFoundation\Response
      */
@@ -79,7 +79,7 @@ public function galeryList(PaginatorInterface $paginator, Request $request){
     }
 
     /**
-     * @Route("/galery/delete/{id}",name="admin_galery_delete")
+     * @Route("admin/galery/delete/{id}",name="admin_galery_delete")
      * @param Galery $galery
      * @return \Symfony\Component\HttpFoundation\RedirectResponse
      */
@@ -93,7 +93,7 @@ public function galeryList(PaginatorInterface $paginator, Request $request){
     }
 
     /**
-     * @Route("/galery/edit/{id}",name="admin_galery_edit")
+     * @Route("admin/galery/edit/{id}",name="admin_galery_edit")
      * @param Request $request
      * @param Galery $galery
      * @return \Symfony\Component\HttpFoundation\RedirectResponse|\Symfony\Component\HttpFoundation\Response
