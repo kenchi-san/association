@@ -9,7 +9,6 @@
 namespace App\Controller;
 
 
-use App\Entity\IntroductionSchool;
 use App\Repository\ActionRepository;
 use App\Repository\EventRepository;
 use App\Repository\GaleryRepository;
@@ -106,7 +105,7 @@ IntroductionSchoolRepository $introductionSchool)
 
 
     /**
-     * @Route("about", name="team")
+     * @Route("/about", name="team")
      * @return Response
      */
     public function about(): Response
@@ -115,7 +114,7 @@ IntroductionSchoolRepository $introductionSchool)
     }
 
     /**
-     * @Route("action/post/{id}", name="action_post")
+     * @Route("/action/post/{id}", name="action_post")
      * @param $id
      * @return Response
      */
@@ -126,7 +125,7 @@ IntroductionSchoolRepository $introductionSchool)
     }
 
     /**
-     * @Route("event/post/{id}", name="event_post")
+     * @Route("/event/post/{id}", name="event_post")
      * @param $id
      * @return Response
      */
@@ -137,7 +136,7 @@ IntroductionSchoolRepository $introductionSchool)
     }
 
     /**
-     * @Route("event", name="event")
+     * @Route("/event", name="event")
      * @param Request $request
      * @return Response
      */
@@ -152,7 +151,7 @@ IntroductionSchoolRepository $introductionSchool)
 
 
     /**
-     * @Route("galery",name="homegalery")
+     * @Route("/galery",name="homegalery")
      * @param Request $request
      * @return Response
      */
@@ -167,7 +166,7 @@ IntroductionSchoolRepository $introductionSchool)
     }
 
     /**
-     * @Route("multimedia", name="homemultimedia")
+     * @Route("/multimedia", name="homemultimedia")
      * @param PaginatorInterface $paginator
      * @param Request $request
      * @return mixed
@@ -182,7 +181,7 @@ IntroductionSchoolRepository $introductionSchool)
     }
 
     /**
-     * @Route("info-parrain", name="homedonation")
+     * @Route("/info-parrain", name="homedonation")
      */
     public function parrainOrDonationPage(){
 
@@ -190,7 +189,7 @@ IntroductionSchoolRepository $introductionSchool)
     }
 
     /**
-     * @Route("payement/donation",name="donationpage")
+     * @Route("/payement/donation",name="donationpage")
      * @return Response
      */
     public function payementPage(){
