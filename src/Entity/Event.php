@@ -52,6 +52,15 @@ class Event
      */
     private $updatedAt;
 
+
+    /**
+     * @return \DateTime
+     */
+    public function getUpdatedAt(): ?\DateTimeInterface
+    {
+        return $this->updatedAt;
+    }
+
     public function getId(): ?int
     {
         return $this->id;
@@ -117,6 +126,11 @@ class Event
         return strip_tags($this->content);
     }
 
+
+    public function setUpdatedAt(?\DateTimeInterface $updatedAt): self
+    {
+        $this->updatedAt = $updatedAt;
+    }
 
 
 }

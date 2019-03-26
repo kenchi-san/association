@@ -1,0 +1,10 @@
+easy_admin:
+    entities:
+        Introduction:
+            class: App\Entity\IntroductionSchool
+            form:
+                fields:
+                    - { property: 'title', label: 'Titre'}
+                    - { property: 'content', type: 'fos_ckeditor', label: 'Contenu' }
+                    - { property: 'imageFile', type: 'vich_image', label: 'image'}
+                    - { property: 'updatedAt',type: 'datetime', label: 'date de mise en ligne'}

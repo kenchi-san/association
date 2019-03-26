@@ -1,0 +1,9 @@
+easy_admin:
+    entities:
+        Galery:
+            class: App\Entity\Galery
+            form:
+                fields:
+                    - { property: 'title', label: 'Titre'}
+                    - { property: 'imageFile', type: 'vich_image', label: 'image'}
+                    - { property: 'updatedAt',type: 'datetime', label: 'date de mise en ligne'}
