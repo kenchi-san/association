@@ -120,8 +120,9 @@ IntroductionSchoolRepository $introductionSchool)
      */
     public function postAction($id)
     {
+        $listAction=$this->actionRepository->LastPost();
         $actions = $this->actionRepository->find($id);
-        return $this->render('pages/Action_post.html.twig', compact('actions'));
+        return $this->render('pages/Action_post.html.twig', ['actions'=>$actions,'listAction'=>$listAction ]);
     }
 
     /**
@@ -131,8 +132,9 @@ IntroductionSchoolRepository $introductionSchool)
      */
     public function postEvent($id)
     {
+        $listEvents=$this->eventRepository->OrderByEsc();
         $events = $this->eventRepository->find($id);
-        return $this->render('pages/Event_post.html.twig', compact('events'));
+        return $this->render('pages/Event_post.html.twig', ['events'=>$events,'listEvent'=>$listEvents]);
     }
 
     /**
