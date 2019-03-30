@@ -14,6 +14,7 @@ use App\Repository\EventRepository;
 use App\Repository\GaleryRepository;
 use App\Repository\IntroductionSchoolRepository;
 use App\Repository\MultimediaRepository;
+use App\Repository\TeamRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Knp\Component\Pager\PaginatorInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -102,15 +103,15 @@ IntroductionSchoolRepository $introductionSchool)
     }
 
 
-
-
     /**
      * @Route("/about", name="team")
+     * @param TeamRepository $teamRepository
      * @return Response
      */
-    public function about(): Response
+    public function about(TeamRepository $teamRepository): Response
     {
-        return $this->render('pages/about.html.twig');
+        $team = $teamRepository->findAll();
+        return $this->render('pages/about.html.twig',['team'=>$team]);
     }
 
     /**
@@ -197,6 +198,7 @@ IntroductionSchoolRepository $introductionSchool)
     public function payementPage(){
         return $this->render('pages/payementPage.html.twig');
     }
+
 
 
 }

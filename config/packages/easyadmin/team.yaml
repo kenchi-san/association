@@ -1,0 +1,11 @@
+easy_admin:
+    entities:
+        Team:
+            class: App\Entity\Team
+            form:
+                fields:
+                    - { property: 'fullname', label: 'nom complet'}
+                    - { property: 'status', label: 'fonction dans l association' }
+                    - { property: 'title', label: 'Titre'}
+                    - { property: 'resume', type: 'fos_ckeditor', label: 'Contenu' }
+                    - { property: 'imageFile', type: 'vich_image', label: 'image'}

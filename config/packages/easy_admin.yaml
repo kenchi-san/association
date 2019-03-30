@@ -12,6 +12,7 @@ easy_admin:
             - { label: 'Retour à la page accueil', route: 'homepage' }
             - { entity: 'Introduction',label: 'présentation du site' ,icon: 'book' }
             - { entity: 'Event',label: 'évènements' ,icon: 'book' }
+            - { entity: 'Team',label: 'équipe' ,icon: 'book' }
             - { entity: 'Action',label: 'actions' ,icon: 'book' }
             - { entity: 'Galery',label: 'images' ,icon: 'book' }
             - { entity: 'Multimedia',label: 'vidéos' ,icon: 'book' }
