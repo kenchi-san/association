@@ -8,11 +8,14 @@ easy_admin:
 
     site_name: 'Panneau de configuration du site'
     design:
+        form_theme:
+            - '@EasyAdmin/form/bootstrap_4.html.twig'
         menu:
             - { label: 'Retour à la page accueil', route: 'homepage' }
             - { entity: 'Introduction',label: 'présentation du site' ,icon: 'book' }
             - { entity: 'Event',label: 'évènements' ,icon: 'book' }
             - { entity: 'Team',label: 'équipe' ,icon: 'book' }
+            - { entity: 'Partner', label: 'Nos partenaires', icon: 'book'}
             - { entity: 'Action',label: 'actions' ,icon: 'book' }
             - { entity: 'Galery',label: 'images' ,icon: 'book' }
             - { entity: 'Multimedia',label: 'vidéos' ,icon: 'book' }

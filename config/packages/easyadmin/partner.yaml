@@ -1,0 +1,9 @@
+easy_admin:
+    entities:
+        Partner:
+            class: App\Entity\OurPartner
+            form:
+                fields:
+                    - { property: 'title', label: 'Titre'}
+                    - { property: 'url', label: 'site du partenaire'}
+                    - { property: 'imageFile', type: 'vich_image', label: 'image'}

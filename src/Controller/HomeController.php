@@ -9,11 +9,13 @@
 namespace App\Controller;
 
 
+use App\Entity\Action;
 use App\Repository\ActionRepository;
 use App\Repository\EventRepository;
 use App\Repository\GaleryRepository;
 use App\Repository\IntroductionSchoolRepository;
 use App\Repository\MultimediaRepository;
+use App\Repository\OurPartnerRepository;
 use App\Repository\TeamRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Knp\Component\Pager\PaginatorInterface;
@@ -106,23 +108,24 @@ IntroductionSchoolRepository $introductionSchool)
     /**
      * @Route("/about", name="team")
      * @param TeamRepository $teamRepository
+     * @param OurPartnerRepository $partnerRepository
      * @return Response
      */
-    public function about(TeamRepository $teamRepository): Response
+    public function about(TeamRepository $teamRepository, OurPartnerRepository $partnerRepository): Response
     {
+        $partner= $partnerRepository->findAll();
         $team = $teamRepository->findAll();
-        return $this->render('pages/about.html.twig',['team'=>$team]);
+        return $this->render('pages/about.html.twig',['team'=>$team, 'partners'=>$partner]);
     }
 
     /**
      * @Route("/action/post/{id}", name="action_post")
-     * @param $id
+     * @param Action $actions
      * @return Response
      */
-    public function postAction($id)
+    public function postAction(Action $actions)
     {
         $listAction=$this->actionRepository->LastPost();
-        $actions = $this->actionRepository->find($id);
         return $this->render('pages/Action_post.html.twig', ['actions'=>$actions,'listAction'=>$listAction ]);
     }
 
