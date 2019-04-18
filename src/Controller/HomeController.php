@@ -157,7 +157,7 @@ IntroductionSchoolRepository $introductionSchool)
 
 
     /**
-     * @Route("/galery",name="homegalery")
+     * @Route("/photos",name="homegalery")
      * @param Request $request
      * @return Response
      */
