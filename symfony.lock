@@ -197,6 +197,12 @@
             "ref": "fb7e19da7f013d0d422fa9bce16f5c510e27609b"
         }
     },
+    "sonata-project/exporter": {
+        "version": "1.11.1"
+    },
+    "sonata-project/seo-bundle": {
+        "version": "2.7.0"
+    },
     "studio-42/elfinder": {
         "version": "2.1.46"
     },
