@@ -1,9 +1,0 @@
-easy_admin:
-    entities:
-        Action:
-            class: App\Entity\SeoTitle
-            form:
-                fields:
-                    - { property: 'title', label: 'Titre de la page'}
-                    - { property: 'description', type: '', label: 'Contenu' }
-
