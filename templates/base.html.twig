@@ -4,13 +4,11 @@
 <head>
 
     <meta charset="utf-8">
-    <link rel="icon" type="image/png" href="{{ asset('images_static/LogoFB.jpg') }}" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
     {% block title %}
-
         <title>Association Swahilisa</title>
-        <meta name="description" content="Page d'accueil de l'assiation swahilisa. Decouvrez nos actions, nos événements et bien plus encore">
-
     {% endblock %}
     {% block stylesheets %}
 
@@ -98,7 +96,7 @@
                                 {{ app.user.username }}
                             </a>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                                <a class="dropdown-item" href="{{ path('easyadmin') }}">Back-end</a>
+                                <a class="dropdown-item" href="http://127.0.0.1:8000/admin">Back-end</a>
                                 <a class="dropdown-item" href="{{ path('logout') }}">Se déconnecter</a>
 
                             </div>

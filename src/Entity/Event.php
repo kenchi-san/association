@@ -61,12 +61,6 @@ class Event
         return $this->updatedAt;
     }
 
-    public function setUpdatedAt(?\DateTimeInterface $updatedAt): self
-    {
-        $this->updatedAt = $updatedAt;
-        return $this;
-    }
-
     public function getId(): ?int
     {
         return $this->id;
@@ -130,6 +124,12 @@ class Event
     public function getContentStrip()
     {
         return strip_tags($this->content);
+    }
+
+
+    public function setUpdatedAt(?\DateTimeInterface $updatedAt): self
+    {
+        $this->updatedAt = $updatedAt;
     }
 
 

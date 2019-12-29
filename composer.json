@@ -10,7 +10,6 @@
         "helios-ag/fm-elfinder-bundle": "^9.2",
         "knplabs/knp-paginator-bundle": "^2.8",
         "sensio/framework-extra-bundle": "^5.2",
-        "sonata-project/seo-bundle": "^2.7",
         "symfony/apache-pack": "^1.0",
         "symfony/asset": "4.2.*",
         "symfony/console": "4.2.*",
