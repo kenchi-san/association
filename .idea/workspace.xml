@@ -2,42 +2,391 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27db038e-7912-44ea-b573-041020c3b9b4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/swahilisa.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/swahilisa.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/easy_admin.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/easy_admin.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/elfinder/dist/css/elfinder.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/elfinder/dist/css/elfinder.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/elfinder/dist/css/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/elfinder/dist/css/theme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/elfinder/dist/img/editor-icons.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/elfinder/dist/img/editor-icons.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/elfinder/dist/img/icons-big.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/elfinder/dist/img/icons-big.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/elfinder/dist/img/icons-big.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/elfinder/dist/img/icons-big.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/elfinder/dist/img/icons-small.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/elfinder/dist/img/icons-small.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/elfinder/dist/img/toolbar.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/elfinder/dist/img/toolbar.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/elfinder/dist/img/tui-icon-a.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/elfinder/dist/img/tui-icon-a.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/elfinder/dist/img/tui-icon-b.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/elfinder/dist/img/tui-icon-b.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/elfinder/dist/img/tui-icon-c.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/elfinder/dist/img/tui-icon-c.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/elfinder/dist/img/tui-icon-d.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/elfinder/dist/img/tui-icon-d.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/elfinder/dist/js/elfinder.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/elfinder/dist/js/elfinder.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.LANG.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.LANG.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.ar.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.ar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.bg.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.bg.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.ca.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.cs.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.cs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.da.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.da.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.de.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.de.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.el.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.el.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.es.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.es.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.fa.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.fa.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.fallback.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.fallback.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.fo.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.fo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.fr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.he.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.he.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.hr.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.hr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.hu.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.hu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.id.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.id.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.it.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.it.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.ja.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.ja.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.ko.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.ko.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.nl.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.nl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.no.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.no.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.pl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.pt_BR.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.pt_BR.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.ro.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.ro.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.ru.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.si.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.si.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.sk.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.sk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.sl.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.sl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.sr.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.sr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.sv.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.sv.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.tr.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.tr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.ug_CN.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.ug_CN.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.uk.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.uk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.vi.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.vi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.zh_CN.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.zh_CN.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.zh_TW.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/elfinder/dist/js/i18n/elfinder.zh_TW.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/elfinder/elfinder-built.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/elfinder/elfinder-built.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/elfinder/elfinder-built.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/elfinder/elfinder-built.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/jquery-ui-built.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/jquery-ui-built.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/jquery-ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/jquery-ui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/jquery-ui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/jquery-ui.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/base/accordion.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/base/accordion.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/base/all.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/base/all.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/base/autocomplete.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/base/autocomplete.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/base/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/base/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/base/button.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/base/button.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/base/checkboxradio.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/base/checkboxradio.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/base/controlgroup.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/base/controlgroup.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/base/core.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/base/core.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/base/datepicker.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/base/datepicker.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/base/dialog.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/base/dialog.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/base/draggable.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/base/draggable.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/base/jquery-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/base/jquery-ui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/base/jquery-ui.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/base/jquery-ui.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/base/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/base/menu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/base/progressbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/base/progressbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/base/resizable.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/base/resizable.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/base/selectable.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/base/selectable.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/base/selectmenu.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/base/selectmenu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/base/slider.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/base/slider.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/base/sortable.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/base/sortable.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/base/spinner.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/base/spinner.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/base/tabs.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/base/tabs.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/base/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/base/theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/base/tooltip.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/base/tooltip.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/black-tie/jquery-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/black-tie/jquery-ui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/black-tie/jquery-ui.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/black-tie/jquery-ui.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/black-tie/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/black-tie/theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/blitzer/jquery-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/blitzer/jquery-ui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/blitzer/jquery-ui.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/blitzer/jquery-ui.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/blitzer/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/blitzer/theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/cupertino/jquery-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/cupertino/jquery-ui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/cupertino/jquery-ui.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/cupertino/jquery-ui.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/cupertino/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/cupertino/theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/dark-hive/jquery-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/dark-hive/jquery-ui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/dark-hive/jquery-ui.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/dark-hive/jquery-ui.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/dark-hive/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/dark-hive/theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/dot-luv/jquery-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/dot-luv/jquery-ui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/dot-luv/jquery-ui.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/dot-luv/jquery-ui.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/dot-luv/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/dot-luv/theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/eggplant/jquery-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/eggplant/jquery-ui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/eggplant/jquery-ui.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/eggplant/jquery-ui.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/eggplant/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/eggplant/theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/excite-bike/jquery-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/excite-bike/jquery-ui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/excite-bike/jquery-ui.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/excite-bike/jquery-ui.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/excite-bike/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/excite-bike/theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/flick/jquery-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/flick/jquery-ui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/flick/jquery-ui.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/flick/jquery-ui.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/flick/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/flick/theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/hot-sneaks/jquery-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/hot-sneaks/jquery-ui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/hot-sneaks/jquery-ui.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/hot-sneaks/jquery-ui.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/hot-sneaks/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/hot-sneaks/theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/humanity/jquery-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/humanity/jquery-ui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/humanity/jquery-ui.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/humanity/jquery-ui.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/humanity/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/humanity/theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/le-frog/jquery-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/le-frog/jquery-ui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/le-frog/jquery-ui.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/le-frog/jquery-ui.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/le-frog/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/le-frog/theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/mint-choc/jquery-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/mint-choc/jquery-ui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/mint-choc/jquery-ui.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/mint-choc/jquery-ui.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/mint-choc/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/mint-choc/theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/overcast/jquery-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/overcast/jquery-ui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/overcast/jquery-ui.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/overcast/jquery-ui.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/overcast/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/overcast/theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/pepper-grinder/jquery-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/pepper-grinder/jquery-ui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/pepper-grinder/jquery-ui.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/pepper-grinder/jquery-ui.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/pepper-grinder/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/pepper-grinder/theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/redmond/jquery-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/redmond/jquery-ui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/redmond/jquery-ui.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/redmond/jquery-ui.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/redmond/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/redmond/theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/smoothness/jquery-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/smoothness/jquery-ui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/smoothness/jquery-ui.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/smoothness/jquery-ui.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/smoothness/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/smoothness/theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/south-street/jquery-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/south-street/jquery-ui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/south-street/jquery-ui.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/south-street/jquery-ui.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/south-street/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/south-street/theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/start/jquery-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/start/jquery-ui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/start/jquery-ui.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/start/jquery-ui.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/start/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/start/theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/sunny/jquery-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/sunny/jquery-ui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/sunny/jquery-ui.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/sunny/jquery-ui.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/sunny/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/sunny/theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/swanky-purse/jquery-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/swanky-purse/jquery-ui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/swanky-purse/jquery-ui.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/swanky-purse/jquery-ui.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/swanky-purse/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/swanky-purse/theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/trontastic/jquery-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/trontastic/jquery-ui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/trontastic/jquery-ui.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/trontastic/jquery-ui.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/trontastic/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/trontastic/theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/ui-darkness/jquery-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/ui-darkness/jquery-ui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/ui-darkness/jquery-ui.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/ui-darkness/jquery-ui.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/ui-darkness/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/ui-darkness/theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/ui-lightness/jquery-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/ui-lightness/jquery-ui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/ui-lightness/jquery-ui.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/ui-lightness/jquery-ui.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/ui-lightness/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/ui-lightness/theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/vader/jquery-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/vader/jquery-ui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/vader/jquery-ui.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/vader/jquery-ui.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/themes/vader/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/themes/vader/theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/core.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/core.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/disable-selection.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/disable-selection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/effect.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/effect.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/effects/effect-blind.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/effects/effect-blind.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/effects/effect-bounce.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/effects/effect-bounce.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/effects/effect-clip.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/effects/effect-clip.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/effects/effect-drop.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/effects/effect-drop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/effects/effect-explode.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/effects/effect-explode.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/effects/effect-fade.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/effects/effect-fade.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/effects/effect-fold.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/effects/effect-fold.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/effects/effect-highlight.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/effects/effect-highlight.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/effects/effect-puff.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/effects/effect-puff.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/effects/effect-pulsate.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/effects/effect-pulsate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/effects/effect-scale.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/effects/effect-scale.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/effects/effect-shake.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/effects/effect-shake.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/effects/effect-size.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/effects/effect-size.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/effects/effect-slide.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/effects/effect-slide.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/effects/effect-transfer.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/effects/effect-transfer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/escape-selector.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/escape-selector.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/focusable.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/focusable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/form-reset-mixin.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/form-reset-mixin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-af.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-af.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-ar-DZ.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-ar-DZ.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-ar.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-ar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-az.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-az.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-be.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-be.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-bg.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-bg.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-bs.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-bs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-ca.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-cs.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-cs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-cy-GB.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-cy-GB.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-da.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-da.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-de.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-de.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-el.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-el.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-en-AU.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-en-AU.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-en-GB.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-en-GB.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-en-NZ.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-en-NZ.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-eo.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-eo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-es.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-es.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-et.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-et.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-eu.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-eu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-fa.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-fa.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-fi.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-fi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-fo.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-fo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-fr-CA.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-fr-CA.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-fr-CH.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-fr-CH.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-fr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-gl.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-gl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-he.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-he.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-hi.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-hi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-hr.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-hr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-hu.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-hu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-hy.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-hy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-id.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-id.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-is.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-is.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-it-CH.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-it-CH.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-it.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-it.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-ja.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-ja.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-ka.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-ka.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-kk.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-kk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-km.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-km.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-ko.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-ko.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-ky.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-ky.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-lb.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-lb.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-lt.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-lt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-lv.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-lv.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-mk.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-mk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-ml.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-ml.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-ms.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-ms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-nb.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-nb.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-nl-BE.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-nl-BE.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-nl.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-nl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-nn.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-nn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-no.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-no.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-pl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-pt-BR.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-pt-BR.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-pt.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-pt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-rm.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-rm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-ro.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-ro.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-ru.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-sk.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-sk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-sl.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-sl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-sq.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-sq.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-sr-SR.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-sr-SR.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-sr.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-sr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-sv.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-sv.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-ta.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-ta.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-th.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-th.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-tj.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-tj.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-tr.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-tr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-uk.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-uk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-vi.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-vi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-zh-CN.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-zh-CN.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-zh-HK.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-zh-HK.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-zh-TW.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/i18n/datepicker-zh-TW.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/ie.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/ie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/jquery-1-7.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/jquery-1-7.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/keycode.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/keycode.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/labels.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/labels.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/core.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/core.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/disable-selection.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/disable-selection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/effect.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/effect.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/escape-selector.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/escape-selector.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/focusable.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/focusable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/form-reset-mixin.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/form-reset-mixin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-af.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-af.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-ar-DZ.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-ar-DZ.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-ar.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-ar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-az.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-az.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-be.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-be.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-bg.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-bg.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-bs.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-bs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-ca.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-cs.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-cs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-cy-GB.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-cy-GB.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-da.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-da.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-de.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-de.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-el.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-el.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-en-AU.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-en-AU.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-en-GB.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-en-GB.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-en-NZ.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-en-NZ.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-eo.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-eo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-es.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-es.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-et.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-et.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-eu.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-eu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-fa.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-fa.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-fi.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-fi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-fo.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-fo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-fr-CA.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-fr-CA.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-fr-CH.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-fr-CH.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-fr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-gl.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-gl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-he.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-he.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-hi.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-hi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-hr.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-hr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-hu.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-hu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-hy.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-hy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-id.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-id.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-is.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-is.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-it-CH.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-it-CH.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-it.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-it.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-ja.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-ja.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-ka.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-ka.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-kk.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-kk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-km.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-km.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-ko.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-ko.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-ky.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-ky.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-lb.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-lb.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-lt.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-lt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-lv.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-lv.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-mk.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-mk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-ml.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-ml.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-ms.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-ms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-nb.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-nb.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-nl-BE.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-nl-BE.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-nl.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-nl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-nn.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-nn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-no.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-no.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-pl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-pt-BR.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-pt-BR.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-pt.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-pt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-rm.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-rm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-ro.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-ro.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-ru.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-sk.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-sk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-sl.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-sl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-sq.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-sq.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-sr-SR.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-sr-SR.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-sr.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-sr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-sv.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-sv.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-ta.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-ta.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-th.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-th.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-tj.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-tj.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-tr.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-tr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-uk.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-uk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-vi.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-vi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-zh-CN.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-zh-CN.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-zh-HK.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-zh-HK.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-zh-TW.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/i18n/datepicker-zh-TW.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/ie.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/ie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/jquery-1-7.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/jquery-1-7.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/keycode.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/keycode.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/labels.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/labels.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/plugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/position.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/position.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/safe-active-element.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/safe-active-element.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/safe-blur.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/safe-blur.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/scroll-parent.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/scroll-parent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/tabbable.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/tabbable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/unique-id.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/unique-id.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/version.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/version.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/widget.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/minified/widget.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/plugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/position.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/position.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/safe-active-element.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/safe-active-element.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/safe-blur.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/safe-blur.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/scroll-parent.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/scroll-parent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/tabbable.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/tabbable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/unique-id.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/unique-id.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/version.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/version.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/widget.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/widget.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/widgets/accordion.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/widgets/accordion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/widgets/autocomplete.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/widgets/autocomplete.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/widgets/button.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/widgets/button.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/widgets/checkboxradio.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/widgets/checkboxradio.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/widgets/controlgroup.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/widgets/controlgroup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/widgets/datepicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/widgets/datepicker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/widgets/dialog.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/widgets/dialog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/widgets/draggable.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/widgets/draggable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/widgets/droppable.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/widgets/droppable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/widgets/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/widgets/menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/widgets/mouse.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/widgets/mouse.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/widgets/progressbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/widgets/progressbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/widgets/resizable.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/widgets/resizable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/widgets/selectable.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/widgets/selectable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/widgets/selectmenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/widgets/selectmenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/widgets/slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/widgets/slider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/widgets/sortable.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/widgets/sortable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/widgets/spinner.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/widgets/spinner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/widgets/tabs.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/widgets/tabs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery-ui/ui/widgets/tooltip.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery-ui/ui/widgets/tooltip.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/jquery/jquery-built.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery/jquery-built.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/jquery/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery/jquery.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/jquery/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/jquery/jquery.min.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery/jquery.min.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/jquery/jquery.slim.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery/jquery.slim.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/jquery/jquery.slim.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery/jquery.slim.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/jquery/jquery.slim.min.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery/jquery.slim.min.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/require-built.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/require-built.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/require.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/require.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/require.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/require.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/require.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/require.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/ContactType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ContactType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -244,6 +593,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
     </include_path>
   </component>
+  <component name="ProjectId" id="1Vw843Sdl5tMKshjvPyANZx0OFm" />
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
       <profile-state>
@@ -265,16 +615,22 @@
     </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -370,6 +726,8 @@
       <workItem from="1554040732141" duration="1792000" />
       <workItem from="1554118392250" duration="2240000" />
       <workItem from="1554478852930" duration="5269000" />
+      <workItem from="1578152607345" duration="6257000" />
+      <workItem from="1578245436908" duration="252000" />
     </task>
     <task id="LOCAL-00001" summary="creation htaccess/">
       <created>1551100237352</created>
@@ -387,5 +745,11 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="creation htaccess/" />
     <option name="LAST_COMMIT_MESSAGE" value="creation htaccess/" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="277" y="54" key="SettingsEditor" timestamp="1578153540823">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="277" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1578153540823" />
   </component>
 </project>

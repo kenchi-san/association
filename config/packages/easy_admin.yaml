@@ -10,6 +10,7 @@ easy_admin:
     design:
         form_theme:
             - '@EasyAdmin/form/bootstrap_4.html.twig'
+            - "@FOSCKEditor/Form/ckeditor_widget.html.twig"
         menu:
             - { label: 'Retour à la page accueil', route: 'homepage' }
             - { entity: 'Introduction',label: 'présentation du site' ,icon: 'book' }
